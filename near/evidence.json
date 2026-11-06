@@ -1,0 +1,140 @@
+{
+  "contract": "mkt.dspaid-bounty452.testnet",
+  "token_symbol": "AEDT",
+  "steps": [
+    {
+      "method": "new",
+      "args": {
+        "owner_id": "dspaid-bounty452.testnet",
+        "vault_id": "mkt.dspaid-bounty452.testnet",
+        "total_supply": "1000000000000000000000"
+      },
+      "deposit_yocto": "100000000000000000000000",
+      "tx": "7mbWzHWKgpxeZMoKam4nmg6jRecxCNNSds9cYfd2CqZh",
+      "explorer": "https://testnet.nearblocks.io/txns/7mbWzHWKgpxeZMoKam4nmg6jRecxCNNSds9cYfd2CqZh",
+      "logs": [
+        "{\"event\":\"register\",\"agent\":\"dspaid-bounty452.testnet\",\"minted\":\"1000000000000000000000\"}"
+      ],
+      "signer": "dspaid-bounty452.testnet"
+    },
+    {
+      "method": "storage_deposit",
+      "args": {
+        "account_id": "agent.dspaid-bounty452.testnet"
+      },
+      "deposit_yocto": "100000000000000000000000",
+      "tx": "HYLpAfL1mh7GaTbEKZ5mEy19CXreMc9o2HvPptsVeosu",
+      "explorer": "https://testnet.nearblocks.io/txns/HYLpAfL1mh7GaTbEKZ5mEy19CXreMc9o2HvPptsVeosu",
+      "logs": [
+        "{\"event\":\"register\",\"agent\":\"agent.dspaid-bounty452.testnet\"}"
+      ],
+      "signer": "dspaid-bounty452.testnet"
+    },
+    {
+      "method": "list_service",
+      "args": {
+        "service_id": "svc_1",
+        "title": "Smart-contract audit",
+        "price": "30000000000000000000"
+      },
+      "deposit_yocto": "0",
+      "tx": "DMKnF5ZPGXzQRMQudqkmXW9kne5sbidrDyoQ2JsE4eB2",
+      "explorer": "https://testnet.nearblocks.io/txns/DMKnF5ZPGXzQRMQudqkmXW9kne5sbidrDyoQ2JsE4eB2",
+      "logs": [
+        "{\"event\":\"list_service\",\"seller\":\"agent.dspaid-bounty452.testnet\",\"serviceId\":\"svc_1\"}"
+      ],
+      "signer": "agent.dspaid-bounty452.testnet"
+    },
+    {
+      "method": "hire",
+      "args": {
+        "order_id": "ord_1",
+        "service_id": "svc_1"
+      },
+      "deposit_yocto": "1",
+      "tx": "EeBrR9DgteKs8i5rbWx4cJGA9Jux79jLCWgkw1w5JNpL",
+      "explorer": "https://testnet.nearblocks.io/txns/EeBrR9DgteKs8i5rbWx4cJGA9Jux79jLCWgkw1w5JNpL",
+      "logs": [
+        "{\"event\":\"escrow_lock\",\"orderId\":\"ord_1\",\"buyer\":\"dspaid-bounty452.testnet\",\"seller\":\"agent.dspaid-bounty452.testnet\",\"amount\":\"30000000000000000000\"}"
+      ],
+      "signer": "dspaid-bounty452.testnet"
+    },
+    {
+      "method": "deliver",
+      "args": {
+        "order_id": "ord_1"
+      },
+      "deposit_yocto": "1",
+      "tx": "VbVNFgsM68ihwEnnXpkKqfp99wVDceizEwd9ZDDickB",
+      "explorer": "https://testnet.nearblocks.io/txns/VbVNFgsM68ihwEnnXpkKqfp99wVDceizEwd9ZDDickB",
+      "logs": [
+        "{\"event\":\"delivered\",\"orderId\":\"ord_1\"}"
+      ],
+      "signer": "agent.dspaid-bounty452.testnet"
+    },
+    {
+      "method": "accept",
+      "args": {
+        "order_id": "ord_1"
+      },
+      "deposit_yocto": "1",
+      "tx": "7a5sEzyCADCjmeTYKGbC1U3SEQupAmKvd95UQiiRGLiE",
+      "explorer": "https://testnet.nearblocks.io/txns/7a5sEzyCADCjmeTYKGbC1U3SEQupAmKvd95UQiiRGLiE",
+      "logs": [
+        "{\"event\":\"escrow_release\",\"orderId\":\"ord_1\",\"paidTo\":\"agent.dspaid-bounty452.testnet\",\"amount\":\"30000000000000000000\"}"
+      ],
+      "signer": "dspaid-bounty452.testnet"
+    },
+    {
+      "method": "hire",
+      "args": {
+        "order_id": "ord_2",
+        "service_id": "svc_1"
+      },
+      "deposit_yocto": "1",
+      "tx": "C9KAVm3ELSbzrKtvvQ6S66rwkvKbwvJGiYUYoWUajeu8",
+      "explorer": "https://testnet.nearblocks.io/txns/C9KAVm3ELSbzrKtvvQ6S66rwkvKbwvJGiYUYoWUajeu8",
+      "logs": [
+        "{\"event\":\"escrow_lock\",\"orderId\":\"ord_2\",\"buyer\":\"dspaid-bounty452.testnet\",\"seller\":\"agent.dspaid-bounty452.testnet\",\"amount\":\"30000000000000000000\"}"
+      ],
+      "signer": "dspaid-bounty452.testnet"
+    },
+    {
+      "method": "deliver",
+      "args": {
+        "order_id": "ord_2"
+      },
+      "deposit_yocto": "1",
+      "tx": "GhiYH7KsXWYjm5qYNC6pJL6XRqpFgFejNQ7gN3ed4hKB",
+      "explorer": "https://testnet.nearblocks.io/txns/GhiYH7KsXWYjm5qYNC6pJL6XRqpFgFejNQ7gN3ed4hKB",
+      "logs": [
+        "{\"event\":\"delivered\",\"orderId\":\"ord_2\"}"
+      ],
+      "signer": "agent.dspaid-bounty452.testnet"
+    },
+    {
+      "method": "dispute",
+      "args": {
+        "order_id": "ord_2"
+      },
+      "deposit_yocto": "1",
+      "tx": "2NftXho4VsjD5aFWP7iiTGNkFByB61UhGZgRKivQvBHs",
+      "explorer": "https://testnet.nearblocks.io/txns/2NftXho4VsjD5aFWP7iiTGNkFByB61UhGZgRKivQvBHs",
+      "logs": [
+        "{\"event\":\"refund\",\"orderId\":\"ord_2\",\"refundedTo\":\"dspaid-bounty452.testnet\",\"amount\":\"30000000000000000000\"}"
+      ],
+      "signer": "dspaid-bounty452.testnet"
+    }
+  ],
+  "started": "2026-11-06T06:04:05.970Z",
+  "verification": {
+    "ft_total_supply": "\"1000000000000000000000\"",
+    "buyer_balance": "\"970000000000000000000\"",
+    "seller_balance": "\"30000000000000000000\"",
+    "vault_balance": "\"0\"",
+    "verify_locked": "\"0\"",
+    "ord_1_state": "released",
+    "ord_2_state": "refunded"
+  },
+  "finished": "2026-11-06T06:04:30.543Z"
+}

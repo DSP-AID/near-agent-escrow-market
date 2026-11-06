@@ -1,0 +1,15 @@
+{
+  "name": "near-agent-escrow-market-testnet",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Testnet deploy/flow/verify scripts for the single-account FT+escrow market contract",
+  "type": "commonjs",
+  "scripts": {
+    "deploy": "node deploy_market.js",
+    "flow": "node flow_market.js",
+    "verify": "node verify_market.js"
+  },
+  "dependencies": {
+    "near-api-js": "^7.4.0"
+  }
+}
